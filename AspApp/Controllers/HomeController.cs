@@ -12,7 +12,8 @@ namespace AspApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            HelloModel _model = new HelloModel() { Message = "Hello, Dima" };
+            return View(_model);
         }
 
         public IActionResult About()
